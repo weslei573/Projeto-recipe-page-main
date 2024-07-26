@@ -20,6 +20,10 @@
 	box-sizing: border-box;
 }
 
+ul{
+	list-style: none;
+}
+
 .box {
 	display: flex;
 	flex-direction: column;
@@ -54,13 +58,22 @@
 	color: var(--Stone900);
 }
 
-.recipe .apresentacao > p {
+.negrito {
 	font-family: 'Outfit', serif;
-	font-weight: 400;
-	font-size: .97em;
+	font-weight: 700;
+	font-size: .98em;
 	line-height: 140%;
 	color: var(--Stone600);
 }
+
+.text-forme {
+	font-family: 'Outfit', serif;
+	font-weight: 400;
+	font-size: .96em;
+	line-height: 140%;
+	color: var(--Stone600);
+}
+
 
 .recipe .preparo-time {
 	display: flex;
@@ -79,26 +92,43 @@
 	color: var(--Rose800);
 }
 
-.preparo-time > div {
+.preparo-time > div,
+.descricao .list-ingred > li {
 	display: flex;
 	align-items: center;
 
 	font-family: 'Outfit', serif;
 	font-size: .97em;
-	line-height: 140%;
+	line-height: 150%;
 	color: var(--Stone600);
 }
 
-.preparo-time > div > i {
+ i {
 	font-size: 5px;
-	color: var(--Brown800);
+	color: var(--Rose800);
 	padding: 0px 25px 0px 8px;
 }
 
-.preparo-time > div > p {
-	font-weight: 400;
+i.co {
+	color: var(--Brown800);
 }
 
-.preparo-time > div > p > span {
-	font-weight: 700;
+.descricao {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
 }
+
+.descricao > h2 {
+	font-family: 'Young Serif';
+	font-size: 1.8em;
+	font-weight: 400;
+	color: var(--Brown800);
+}
+
+.descricao .list-ingred{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
