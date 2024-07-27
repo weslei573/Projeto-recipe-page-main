@@ -39,7 +39,6 @@ ol {
 	flex-direction: column;
 	gap: 28px;
 	background-color: var(--White);
-
 	padding: 36px 30px;
 }
 
@@ -54,7 +53,6 @@ ol {
 	font-weight: 400;
 	font-size: 2.2em;
 	line-height: 100%;
-
 	color: var(--Stone900);
 }
 
@@ -81,7 +79,6 @@ ol {
 .recipe .preparo-time {
 	display: flex;
 	flex-direction: column;
-
 	background-color: var(--Rose50);
 	border-radius: 16px;
 	padding: 24px;
@@ -99,7 +96,6 @@ ol {
 .descricao .list-ingred > li {
 	display: flex;
 	align-items: center;
-
 	font-family: 'Outfit', serif;
 	font-size: .97em;
 	line-height: 150%;
@@ -141,7 +137,6 @@ i.co {
 .descricao .list-instruct > li::before {
 	content: counter(li) ".";
 	margin-left: -2em;
-
 	font-family: 'Outfit', serif;
 	color: var(--Brown800);
 	font-size: .98em;
@@ -161,4 +156,9 @@ i.co {
 
 .list-nutri > li > div {
 	width: 50%;
+}
+
+hr{
+    border: 0px;
+    border-top: 2px solid var(--Stone150);
 }
