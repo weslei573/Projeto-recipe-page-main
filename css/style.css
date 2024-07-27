@@ -20,7 +20,8 @@
 	box-sizing: border-box;
 }
 
-ul{
+ul,
+ol {
 	list-style: none;
 }
 
@@ -32,7 +33,6 @@ ul{
 .imagem > img {
 	width: 100%;
 }
-
 
 .box .recipe {
 	display: flex;
@@ -66,6 +66,10 @@ ul{
 	color: var(--Stone600);
 }
 
+.negrito.cor {
+	color: var(--Brown800);
+}
+
 .text-forme {
 	font-family: 'Outfit', serif;
 	font-weight: 400;
@@ -74,7 +78,6 @@ ul{
 	color: var(--Stone600);
 }
 
-
 .recipe .preparo-time {
 	display: flex;
 	flex-direction: column;
@@ -82,7 +85,7 @@ ul{
 	background-color: var(--Rose50);
 	border-radius: 16px;
 	padding: 24px;
-	gap: 16px;
+	gap: 10px;
 }
 
 .recipe .preparo-time > h2 {
@@ -103,7 +106,7 @@ ul{
 	color: var(--Stone600);
 }
 
- i {
+i {
 	font-size: 5px;
 	color: var(--Rose800);
 	padding: 0px 25px 0px 8px;
@@ -113,10 +116,13 @@ i.co {
 	color: var(--Brown800);
 }
 
-.descricao {
+.descricao,
+.descricao .list-ingred,
+.descricao .list-nutri,
+.descricao .list-instruct {
 	display: flex;
 	flex-direction: column;
-	gap: 16px;
+	gap: 10px;
 }
 
 .descricao > h2 {
@@ -124,11 +130,35 @@ i.co {
 	font-size: 1.8em;
 	font-weight: 400;
 	color: var(--Brown800);
+	padding-bottom: 6px;
 }
 
-.descricao .list-ingred{
+.descricao .list-instruct {
+	counter-reset: li;
+	padding: 0em 0.5em 0.5em 2.5em;
+}
+
+.descricao .list-instruct > li::before {
+	content: counter(li) ".";
+	margin-left: -2em;
+
+	font-family: 'Outfit', serif;
+	color: var(--Brown800);
+	font-size: .98em;
+	font-weight: 700;
+	counter-increment: li;
+	position: absolute;
+}
+
+.descricao .list-nutri {
+	padding-top: 10px;
+}
+
+.descricao .list-nutri > li {
 	display: flex;
-	flex-direction: column;
-	gap: 10px;
+	padding: 0px 30px;
 }
 
+.list-nutri > li > div {
+	width: 50%;
+}
