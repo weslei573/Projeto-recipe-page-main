@@ -18,4 +18,8 @@
 	.imagem > img {
 		border-radius: 16px;
 	}
+
+	.recipe .apresentacao > h1 {
+		font-size: 2.4em;
+	}
 }
