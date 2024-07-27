@@ -15,6 +15,10 @@
 		border-radius: 20px;
 	}
 
+	.box .recipe {
+		padding: 0px;
+	}
+
 	.imagem > img {
 		border-radius: 16px;
 	}

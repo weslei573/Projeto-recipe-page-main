@@ -114,7 +114,7 @@ i.co {
 
 .descricao,
 .descricao .list-ingred,
-.descricao .list-nutri,
+.descricao ul,
 .descricao .list-instruct {
 	display: flex;
 	flex-direction: column;
@@ -145,20 +145,20 @@ i.co {
 	position: absolute;
 }
 
-.descricao .list-nutri {
+.descricao > ul {
 	padding-top: 10px;
 }
 
-.descricao .list-nutri > li {
+.descricao > ul > li {
 	display: flex;
 	padding-left: 30px;
 }
 
-.list-nutri > li > div {
+ul > li > div {
 	width: 50%;
 }
 
-hr{
-    border: 0px;
-    border-top: 2px solid var(--Stone150);
+hr {
+	border: 0px;
+	border-top: 2px solid var(--Stone150);
 }
