@@ -19,6 +19,10 @@
 		padding: 36px 0px;
 	}
 
+	.recipe .preparo-time {
+		padding: 28px;
+	}
+
 	.imagem > img {
 		border-radius: 16px;
 	}
