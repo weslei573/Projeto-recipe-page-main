@@ -16,6 +16,7 @@
 	}
 
 	.box .recipe {
+		gap: 30px;
 		padding: 40px 0px 0px 0px;
 	}
 
